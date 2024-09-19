@@ -1,0 +1,126 @@
+/* styles.css*/
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header>h1 {
+    font-size: 80px;
+    color: #232C26;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    
+}
+.header>h3 {
+    font-size: 40px;
+}
+/* Main */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+h2 {
+    margin-left: 20px;
+}
+.cps, .logos, .prototypes, .media {
+    
+    background-color: #d1dad9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: calc(48% - 30px); 
+    transition: transform 0.2s;
+}
+
+.cps:hover, .logos:hover, .prototypes:hover, .media:hover {
+    transform: scale(1.02);
+}
+
+.card h3 {
+    margin-top: 20px;
+}
+.content {
+    font-size: 30px;
+    align-items: center;
+}
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links a {
+    background: #232C26;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.links a:hover {
+    background: #8a9f9c;
+}
+
+.btn {
+    display: inline-block;
+    background: #232C26;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
+h1 {
+    font-size: 55px;
+}
+footer {
+    
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #8a9f9c;
+    font-size: 30px;
+    float: right;
+    font-style: italic;
+    overflow-x: hidden;
+    margin-right: 10px;
+}
+
+footer a {
+    margin-left: 10px;
+    text-decoration: none;
+    float: right;
+}
+
+footer a:hover {
+    color: #232C26;
+    text-decoration: underline;
+}
